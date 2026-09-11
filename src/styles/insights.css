@@ -1,0 +1,13 @@
+.insights-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media (max-width: 900px) { .insights-grid { grid-template-columns: 1fr; } }
+.insight-card { padding: 22px; }
+.insight-card h3 { font-size: 1rem; margin-bottom: 4px; }
+.insight-card .sub { font-size: 0.82rem; color: var(--muted); margin-bottom: 16px; }
+.mood-legend { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; font-size: 0.78rem; color: var(--muted); }
+.mood-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.mood-legend .dot { width: 8px; height: 8px; border-radius: 50%; }
+.habit-rate-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; }
+.habit-rate-row .name { flex: 0 0 140px; font-size: 0.85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.habit-rate-row .track { flex: 1; height: 8px; border-radius: 999px; background: var(--border); overflow: hidden; }
+.habit-rate-row .fill { height: 100%; border-radius: 999px; }
+.habit-rate-row .pct { flex: 0 0 36px; text-align: right; font-size: 0.8rem; color: var(--muted); }

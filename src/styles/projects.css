@@ -1,0 +1,37 @@
+.project-card { display: flex; flex-direction: column; gap: 12px; }
+.project-card-top { display: flex; align-items: center; gap: 12px; }
+.project-color-dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.project-card h4 { font-size: 1.05rem; flex: 1; }
+.project-card p.desc { font-size: 0.87rem; color: var(--muted); line-height: 1.5; }
+.project-progress-track { height: 6px; border-radius: 999px; background: var(--border); overflow: hidden; }
+.project-progress-fill { height: 100%; background: var(--forest); border-radius: 999px; transition: width 0.3s var(--ease); }
+.project-card-foot { display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; color: var(--muted); }
+.collab-stack { display: flex; }
+.collab-stack .avatar { margin-left: -8px; border: 2px solid var(--surface); }
+.collab-stack .avatar:first-child { margin-left: 0; }
+
+/* ---------- kanban board ---------- */
+.board-wrap { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px; }
+.board-col { flex: 1 1 280px; min-width: 260px; background: var(--paper); border-radius: var(--radius-md); padding: 14px; }
+[data-theme="dark"] .board-col { background: var(--surface-raised); }
+.board-col-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding: 0 4px; }
+.board-col-head h4 { font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); }
+.board-col-count { font-size: 0.75rem; background: var(--border); padding: 1px 8px; border-radius: 999px; color: var(--muted); }
+.board-cards { display: flex; flex-direction: column; gap: 10px; min-height: 40px; }
+
+.task-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 13px 14px; cursor: grab; transition: border-color 0.15s var(--ease), transform 0.1s var(--ease);
+}
+.task-card:hover { border-color: var(--border-strong); }
+.task-card.dragging { opacity: 0.5; }
+.task-card p.title { font-size: 0.9rem; line-height: 1.4; }
+.task-card .task-meta { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 0.75rem; color: var(--muted-light); }
+.task-card .task-actions { display: flex; gap: 4px; margin-top: 10px; }
+.task-card .move-btn { flex: 1; font-size: 0.72rem; padding: 5px 6px; border-radius: 7px; background: var(--border); color: var(--muted); border: none; }
+.task-card .move-btn:hover { background: var(--forest); color: var(--gold-light); }
+
+.board-col.is-drop-target { outline: 2px dashed var(--border-strong); outline-offset: -6px; }
+
+.project-header-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-bottom: 22px; }
+.collab-input-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }

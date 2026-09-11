@@ -1,0 +1,90 @@
+/* =========================================================
+   ROOT — Design tokens
+   Extends the original auth-form brand across the whole app.
+   ========================================================= */
+
+:root {
+  /* --- brand --- */
+  --ink: #16211B;
+  --forest: #1F3B2C;
+  --forest-light: #2E5541;
+  --forest-dark: #14261F;
+  --paper: #EEF2EC;
+  --surface: #FFFFFF;
+  --surface-raised: #FFFFFF;
+  --border: #DCE3DA;
+  --border-strong: #B9C6B7;
+  --muted: #5B6C61;
+  --muted-light: #8A968A;
+  --gold: #B98530;
+  --gold-light: #EFE3C4;
+  --gold-dim: #E4D3A6;
+  --error: #B3452C;
+  --error-bg: #FBEDE7;
+  --success: #3D7A4F;
+  --success-bg: #E9F2EA;
+
+  /* habit / mood accent hues (kept inside the forest/gold family) */
+  --clay: #A9633F;
+  --clay-bg: #F5E9E1;
+  --sky: #3F6E8A;
+  --sky-bg: #E7EFF3;
+
+  /* --- type --- */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Work Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* --- shape / elevation --- */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --shadow-card: 0 20px 45px -28px rgba(20, 38, 31, 0.35);
+  --shadow-btn: 0 10px 24px -10px rgba(31, 59, 44, 0.45);
+  --shadow-pop: 0 16px 40px -12px rgba(20, 38, 31, 0.28);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* --- chrome sizing --- */
+  --sidebar-w: 248px;
+  --topbar-h: 68px;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --ink: #EDF1EA;
+  --forest: #2E5541;
+  --forest-light: #3E6E56;
+  --forest-dark: #0F1B14;
+  --paper: #101913;
+  --surface: #16211B;
+  --surface-raised: #1B2820;
+  --border: #2A3A30;
+  --border-strong: #3C5044;
+  --muted: #9CAB9C;
+  --muted-light: #6F8072;
+  --gold: #D9AF62;
+  --gold-light: #3A331F;
+  --gold-dim: #4A4029;
+  --error: #E08064;
+  --error-bg: #3A2420;
+  --success: #6FC589;
+  --success-bg: #1D3324;
+  --clay: #D89A76;
+  --clay-bg: #33241D;
+  --sky: #86B6D1;
+  --sky-bg: #1C2D36;
+  --shadow-card: 0 20px 45px -22px rgba(0, 0, 0, 0.6);
+  --shadow-btn: 0 10px 24px -10px rgba(0, 0, 0, 0.55);
+  --shadow-pop: 0 16px 40px -12px rgba(0, 0, 0, 0.5);
+
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

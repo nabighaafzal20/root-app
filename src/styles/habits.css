@@ -1,0 +1,23 @@
+.habit-card { display: flex; flex-direction: column; gap: 14px; }
+.habit-card-top { display: flex; align-items: center; gap: 12px; }
+.habit-card-icon { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; flex: none; }
+.habit-card-title { flex: 1; min-width: 0; }
+.habit-card-title h4 { font-size: 1rem; }
+.habit-card-title span { font-size: 0.78rem; color: var(--muted); text-transform: capitalize; }
+.habit-week-strip { display: flex; gap: 6px; }
+.habit-week-day { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.habit-week-day .lbl { font-size: 0.66rem; color: var(--muted-light); text-transform: uppercase; }
+.habit-week-day .dot { width: 26px; height: 26px; border-radius: 8px; border: 1.5px solid var(--border); background: var(--paper); display: grid; place-items: center; }
+.habit-week-day .dot.done { background: var(--forest); border-color: var(--forest); color: #fff; }
+.habit-week-day .dot.today { box-shadow: 0 0 0 2px var(--gold) inset; }
+.habit-week-day button.dot { cursor: pointer; }
+.habit-card-foot { display: flex; align-items: center; justify-content: space-between; }
+.habit-streak-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 0.82rem; font-weight: 700; color: var(--gold); }
+[data-theme="dark"] .habit-streak-badge { color: var(--gold); }
+.habit-card-actions { display: flex; gap: 4px; }
+
+.icon-swatch-picker, .color-swatch-picker { display: flex; gap: 8px; flex-wrap: wrap; }
+.swatch-btn { width: 36px; height: 36px; border-radius: 10px; border: 1.5px solid var(--border); display: grid; place-items: center; background: var(--surface); }
+.swatch-btn.active { border-color: var(--forest); box-shadow: 0 0 0 2px var(--gold-light); }
+.color-dot-btn { width: 30px; height: 30px; border-radius: 50%; border: 2px solid transparent; }
+.color-dot-btn.active { border-color: var(--ink); }
